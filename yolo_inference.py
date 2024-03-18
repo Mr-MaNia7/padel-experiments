@@ -14,16 +14,16 @@ def experiments(model, input_path, output_path, name):
 
 
 if __name__ == "__main__":
-    input_path = "input_data/images/"
-    output_path = "runs/detect/test1/"
+    input_path = "input_data/videos/"
+    output_path = "runs/detect/exp1/"
 
     models = {
-        # "yolov8x": YOLO("yolov8x.pt"),
-        # "yolov3-sppu": YOLO("yolov3-sppu.pt"),
-        # "yolov3u": YOLO("yolov3u.pt"),
-        # "yolov5l6u": YOLO("yolov5l6u.pt"),
-        # "yolov8l-cls": YOLO("yolov8l-cls.pt"),
-        # "rtdetr-l": RTDETR("rtdetr-l.pt"),
+        "yolov8x": YOLO("yolov8x.pt"),
+        "yolov3-sppu": YOLO("yolov3-sppu.pt"),
+        "yolov3u": YOLO("yolov3u.pt"),
+        "yolov5l6u": YOLO("yolov5l6u.pt"),
+        "yolov8l-cls": YOLO("yolov8l-cls.pt"),
+        "rtdetr-l": RTDETR("rtdetr-l.pt"),
         "yolov9e": YOLO("yolov9e.pt"),
     }
     for model_name, model_obj in models.items():
